@@ -1,39 +1,63 @@
 # openbase-aws
 
-**openbase-aws** es una organización independiente que adapta y mantiene forks de los servicios de [Supabase](https://github.com/supabase/supabase) para despliegues **self-hosted en AWS**, enfocados en entornos profesionales, privados y escalables.
+**openbase-aws** es una iniciativa independiente que adapta y mantiene forks de los servicios de [Supabase](https://github.com/supabase/supabase) para entornos **self-hosted profesionales en AWS**.
 
-Este repositorio define las políticas comunes, documentación organizativa y plantillas de colaboración para todos los proyectos bajo `openbase-aws`.
+Nuestro objetivo es ofrecer una distribución robusta y modular que facilite el despliegue, la operación y la integración de los componentes de Supabase en arquitecturas empresariales en la nube, priorizando:
 
----
-
-## 🎯 Objetivo
-
-Ofrecer una distribución personalizada de Supabase optimizada para AWS, incorporando:
-
-- Integración con servicios nativos de AWS (RDS, IAM, CloudWatch, etc.)
-- Despliegue automatizado con ECS, Fargate, EKS o EC2
-- Autenticación y control de acceso adaptado a entornos corporativos
-- Enfoque modular y mantenible, basado en forks de servicios clave como `studio` y `auth`
+- Seguridad
+- Escalabilidad
+- Observabilidad
+- Compatibilidad con servicios gestionados de AWS
 
 ---
 
-## 📁 Contenido de este repositorio
+## 🔧 ¿Qué es openbase-aws?
 
-- `CODE_OF_CONDUCT.md` — Código de conducta para colaboradores
-- `CONTRIBUTING.md` — Guía de contribución
-- `.github/ISSUE_TEMPLATE/` — Plantillas para issues y pull requests
-- `README.md` — Esta descripción general
+Una colección de forks selectivos de los servicios de Supabase, adaptados para:
+
+- Despliegue optimizado con **AWS ECS, Fargate, EC2 o EKS**
+- Integración con **API Gateway, Cognito, RDS, CloudWatch, Lambda**
+- Configuración por infraestructura como código (IaC), compatible con **AWS CDK / Terraform**
+- Autenticación y control de acceso centralizado
+- Automatización de CI/CD para entornos multi-stage (dev/stage/prod)
+
+---
+
+## 📦 Repositorios principales
+
+| Servicio           | Estado       | Descripción                                  |
+|--------------------|--------------|----------------------------------------------|
+| [`studio`](https://github.com/openbase-aws/studio) | 🔧 En desarrollo | UI adaptada con autenticación AWS IAM / básica |
+| [`auth`](https://github.com/openbase-aws/auth)     | 🔧 En desarrollo | Fork de GoTrue adaptado a entornos AWS        |
+| Otros servicios    | ☁️ Upstream   | Usamos directamente los servicios oficiales  |
+
+---
+
+## 🚀 Casos de uso
+
+- Empresas que necesitan desplegar **Supabase en su VPC privada**
+- Proyectos con requisitos de **compliance (GDPR, HIPAA, ISO)**
+- Arquitecturas que exigen observabilidad avanzada (CloudWatch, X-Ray)
+- Desarrolladores que desean una base de datos Postgres moderna con herramientas gestionadas en AWS
 
 ---
 
 ## 📄 Licencia
 
-Este repositorio y todos los proyectos bajo `openbase-aws` mantienen la licencia original Apache 2.0, derivada de los proyectos originales de Supabase.
-
-Este proyecto no está afiliado oficialmente a Supabase Inc.
+Todos los forks se mantienen bajo la licencia original [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). Este proyecto no está afiliado ni respaldado por Supabase Inc.  
+Consulta cada repositorio para detalles de licencia y cambios realizados.
 
 ---
 
-## 🤝 ¿Te interesa colaborar?
+## 🤝 Contribuciones
 
-Consulta las guías de contribución y abre un issue o PR. Estamos creando una distribución modular, segura y bien documentada de Supabase para AWS. Cualquier aportación técnica, mejora o feedback es bienvenido.
+Este es un esfuerzo comunitario independiente. Si estás utilizando Supabase en AWS y necesitas personalizaciones o deseas colaborar, ¡eres bienvenido!
+
+---
+
+## 📬 Contacto
+
+¿Tienes dudas o quieres colaborar?
+
+- GitHub Issues y Discussions
+- [Próximamente: web oficial y documentación extendida]
