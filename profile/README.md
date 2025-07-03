@@ -1,4 +1,4 @@
-# openbase-aws · Organización GitHub
+# openbase-aws
 
 **openbase-aws** es una organización independiente que adapta y mantiene forks de los servicios de [Supabase](https://github.com/supabase/supabase) para despliegues **self-hosted en AWS**, enfocados en entornos profesionales, privados y escalables.
 
